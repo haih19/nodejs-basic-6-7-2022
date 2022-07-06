@@ -1,4 +1,4 @@
-'use strict'
+
 import express from "express";
 import getHomepage from "../controller/homeController.js";
 import homeController from '../controller/homeController.js'
