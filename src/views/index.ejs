@@ -41,9 +41,8 @@
                             <%= dataUser[i].lastName %>
                         </td>
                         <td class="w3-center">
-                            <button
-                                style="background-color: #138496; color: #fff; border: none; padding: 4px 8px; border-radius: 0.25rem;"
-                                type="button">Detail</button>
+                            <a href="/detail/user/<%= dataUser[i].id %>" , target="_blank"
+                                style="text-decoration: none; background-color: #138496; color: #fff; border: none; padding: 4px 8px; border-radius: 0.25rem;">Detail</a>
                             <button
                                 style="background-color: #E0A800; border: none; padding: 4px 8px; margin: 0 4px; border-radius: 0.25rem;"
                                 type="button">Edit</button>

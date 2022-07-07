@@ -26,3 +26,8 @@ body {
     background-color: #04AA6D;
     color: white;
 }
+
+
+table.w3-table-all tr:hover td {
+    background-color: #04AA6D;
+}
