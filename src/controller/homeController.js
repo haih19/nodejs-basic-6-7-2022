@@ -14,7 +14,7 @@ let getHomepage = (req, res) => {
                     address: element.address
                 })
             });
-            return res.render('index.ejs', { dataUser: JSON.stringify(data) })
+            return res.render('index.ejs', { dataUser: data })
         });
 }
 

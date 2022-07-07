@@ -6,13 +6,56 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <title>NodeJS Basic</title>
 </head>
 
 <body>
-    <h2>Hello world from ejs</h2>
-    <%= dataUser %>
-        <img src="/image/wingback.jpg" style="width: 80%;" alt="">
+    <div class="topnav">
+        <a class="active" href="#home">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+    </div>
+
+    <div>
+        <div class="w3-container">
+            <h2>List users</h2>
+
+            <table class="w3-table-all">
+                <tr>
+                    <th class="w3-center">id</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th class="w3-center">Actions</th>
+                </tr>
+                <% for(var i=0; i < dataUser.length; i++) { %>
+                    <tr>
+                        <td class="w3-center">
+                            <%= dataUser[i].id %>
+                        </td>
+                        <td>
+                            <%= dataUser[i].firstName %>
+                        </td>
+                        <td>
+                            <%= dataUser[i].lastName %>
+                        </td>
+                        <td class="w3-center">
+                            <button
+                                style="background-color: #138496; color: #fff; border: none; padding: 4px 8px; border-radius: 0.25rem;"
+                                type="button">Detail</button>
+                            <button
+                                style="background-color: #E0A800; border: none; padding: 4px 8px; margin: 0 4px; border-radius: 0.25rem;"
+                                type="button">Edit</button>
+                            <button
+                                style="background-color: #C82333; color: #fff; border: none; padding: 4px 8px; border-radius: 0.25rem;"
+                                type="button">Delete</button>
+                        </td>
+                    </tr>
+                    <% } %>
+            </table>
+        </div>
+    </div>
 </body>
 
 </html>
