@@ -7,6 +7,11 @@ import initWebRoute from './route/web.js';
 const app = express()
 const port = process.env.PORT || 8080
 
+//middleware
+// setup để gửi data từ client tới server và 
+// lấy data từ server về client
+app.use(express.urlencoded({ extended: true }));
+app.use(express.json());
 
 //setup view engine
 configViewEngine(app);

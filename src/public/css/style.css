@@ -31,3 +31,47 @@ body {
 table.w3-table-all tr:hover td {
     background-color: #04AA6D;
 }
+
+.create-user-container {
+    margin-left: 16px;
+}
+
+.create-user-container .form-content div {
+    margin: 16px 0;
+    /* padding: 14px 16px; */
+    /* display: flex;
+    flex-direction: column; */
+}
+
+.create-user-container .form-content div label {
+    display: inline-block;
+    min-width: 150px;
+}
+
+.create-user-container .form-content div label,
+input {
+    font-size: 16px;
+
+}
+
+.create-user-container .form-content div input {
+    padding: 6px 16px;
+    width: 330px;
+}
+
+.create-user-container .form-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-content>div>button {
+    background-color: #0069D9;
+    color: #FFF;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 5px 20px;
+    margin-top: 24px;
+}
