@@ -7,13 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <title>NodeJS Basic</title>
+    <title>Home</title>
 </head>
 
 <body>
     <div class="topnav">
         <a class="active" href="#home">Home</a>
-        <a href="#news">News</a>
+        <a href="#news">Update</a>
         <a href="#contact">Contact</a>
         <a href="#about">About</a>
     </div>
@@ -43,12 +43,23 @@
                         <td class="w3-center">
                             <a href="/detail/user/<%= dataUser[i].id %>" , target="_blank"
                                 style="text-decoration: none; background-color: #138496; color: #fff; border: none; padding: 4px 8px; border-radius: 0.25rem;">Detail</a>
-                            <button
-                                style="background-color: #E0A800; border: none; padding: 4px 8px; margin: 0 4px; border-radius: 0.25rem;"
-                                type="button">Edit</button>
-                            <button
-                                style="background-color: #C82333; color: #fff; border: none; padding: 4px 8px; border-radius: 0.25rem;"
-                                type="button">Delete</button>
+
+                            <form action="/edit-user/<%= dataUser[i].id %>" method="GET">
+                                <button
+                                    style="background-color: #E0A800; border: none; padding: 4px 8px; margin: 0 4px; border-radius: 0.25rem;"
+                                    type="submit">
+                                    Edit
+                                </button>
+                            </form>
+
+                            <form action="/delete-user" method="POST">
+                                <input type="text" hidden value="<%= dataUser[i].id %>" name="userId">
+                                <button
+                                    style="background-color: #C82333; color: #fff; border: none; padding: 4px 8px; border-radius: 0.25rem;"
+                                    type="submit">
+                                    Delete
+                                </button>
+                            </form>
                         </td>
                     </tr>
                     <% } %>

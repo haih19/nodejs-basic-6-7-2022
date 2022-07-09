@@ -75,3 +75,57 @@ input {
     padding: 5px 20px;
     margin-top: 24px;
 }
+
+.w3-table-all tr td a,
+button,
+form {
+    font-size: 16px;
+
+}
+
+.w3-table-all tr td form {
+    display: inline-block;
+}
+
+.w3-table-all tr td form:hover button {
+    cursor: pointer;
+}
+
+.update-user-container {
+    margin-top: 48px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.update-user-container form div {
+    margin: 14px 0;
+    font-size: 16px;
+}
+
+.update-user-container form div label {
+    display: inline-block;
+    width: 150px;
+}
+
+.update-user-container form div input {
+    padding: 6px 16px;
+    width: 330px;
+}
+
+.update-user-container form div:nth-of-type(5) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 48px;
+}
+
+.update-user-container form div button.btn-save {
+    background-color: #219653;
+    border: none;
+    border-radius: 6px;
+    font-size: 20px;
+    padding: 5px 20px;
+    color: #FFF;
+    cursor: pointer;
+}
