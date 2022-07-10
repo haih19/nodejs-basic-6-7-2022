@@ -1,5 +1,5 @@
 // import connection from '../configs/connectDB.js'
-import e from 'express';
+import express from 'express';
 import pool from '../configs/connectDB.js'
 
 // let getHomepage = async (req, res) => {

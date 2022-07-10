@@ -2,6 +2,7 @@ import express from 'express';
 import configViewEngine from './configs/viewEngine.js';
 import { } from 'dotenv/config'
 import initWebRoute from './route/web.js';
+import initApiRoute from './route/api.js';
 // import connection from './configs/connectDB.js';
 
 const app = express()
@@ -16,7 +17,7 @@ app.use(express.json());
 //setup view engine
 configViewEngine(app);
 initWebRoute(app)
-
+initApiRoute(app)
 
 
 
